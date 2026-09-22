@@ -1,0 +1,81 @@
+{
+  "sim_time": 6.0,
+  "evacuation_routes": {
+    "5": {
+      "distance": 12.0,
+      "route": [
+        5,
+        3,
+        4,
+        2,
+        0
+      ],
+      "status": "EVACUATING"
+    },
+    "7": {
+      "distance": 15.0,
+      "route": [
+        7,
+        5,
+        3,
+        4,
+        2,
+        0
+      ],
+      "status": "EVACUATING"
+    },
+    "9": {
+      "distance": 14.0,
+      "route": [
+        9,
+        8,
+        6,
+        4,
+        2,
+        0
+      ],
+      "status": "EVACUATING"
+    }
+  },
+  "triage_dispatches": [
+    {
+      "medic_id": "M1",
+      "casualty_id": "C_Moderate_2",
+      "casualty_node": 5,
+      "medic_node": 0,
+      "assigned_time": 6.0,
+      "distance": 12.0,
+      "severity": 2.0
+    },
+    {
+      "medic_id": "M2",
+      "casualty_id": "C_Severe_1",
+      "casualty_node": 7,
+      "medic_node": 2,
+      "assigned_time": 6.0,
+      "distance": 13.0,
+      "severity": 5.0
+    }
+  ],
+  "supply_routes": [
+    {
+      "truck_id": "T1",
+      "route": [
+        0,
+        6,
+        8,
+        0
+      ],
+      "total_distance": 22.0,
+      "fuel_consumed": 4.4,
+      "remaining_fuel": 95.6,
+      "cargo_delivered": 350.0,
+      "camps_visited": [
+        "Camp_North",
+        "Camp_East"
+      ]
+    }
+  ],
+  "orphaned_casualties": [],
+  "status": "OK"
+}
